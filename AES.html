@@ -1,0 +1,522 @@
+<!--Structure and Language for the document-->
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<!--Meta Data or data not seen by on UI(website on the internet) by user (You)-->
+<head>
+    <!--Character encode to UTF-8-->
+    <meta charset="utf-8">
+   
+    <!--Responsive for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Tab Page Title Name-->
+    <title> Home - AES Literacy Institute </title>
+
+    <!--SEO Site Details-->
+    <meta name="description" content="Welcome to AES Literacy Institute, a non-profit organization dedicated to help adult learners of all kind, especially the underprivileged, to obtain the education and career training necessary to be self-sufficient in themselves mentally, academically and spiritually.">
+    
+    <!---Favicon or image next to Tab tage name-->
+    <link rel="icon" href="images/AES-Logo-1.svg" type="image/svg+xml">
+
+
+    <!--CSS Style of the webpage-->
+    <style>
+	/* Applies uniform resetting clean up to all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+	/* Creation and setting of variables to color values */
+        :root {
+		--color-primary: #e6b91d;
+		--color-primary-dark: #d1a005;
+		--color-primary-light: #fff9e4;
+		--color-meteorite: #ffdb85;
+		--color-dark: #1d1e20;
+		--color-gray: #727586;
+		--color-gray-light: #f2f3f6;
+		--color-light: #fff;
+		--color-success: #00b090;
+		--color-warning: #ffcd35;
+        }
+
+	/* navigation stick above page & styling */
+        nav {
+            background-color: var(--color-dark);
+	    opacity: 0.87
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+	/* Sets the navigation bar horizontally */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+	
+        /* Spacing within navigation bar so they don't all get sandwiched into one word */
+        nav a {
+            display: block;
+            color: var(--color-light);
+            text-decoration: none;
+            padding: 15px 25px;
+            transition: background-color 0.3s ease;
+            font-weight: 500;
+        }
+        
+	/* Reponsive hover for the words in the nav bar */
+        nav a:hover {
+            background-color: var(--color-primary);
+        }
+        
+    
+        
+	/* first header of the webpage on top of the navigation */
+        header {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/aes_home_bg.jpg');
+	    background-size: cover;
+	    background-position: center center;
+	    background-repeat: no repeat;
+	    background-attachment: fixed;
+            color: var(--color-light);
+            padding: 290px 20px;
+	    opacity: 0.97;
+	    background-color: var(--color-dark);
+            text-align: center;
+        }
+        
+
+	/* The size seting for the h1 within the header above the navigation */
+        header h1 {
+            font-size: 4.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+	    color: var(--color-light);	
+        }
+
+        /* The size setting for the p within the header above the navigation */
+        header p {
+            font-size: 4.3rem;
+            opacity: 0.95;
+            margin-bottom: 15px;
+        }
+        
+	/* The size setting for the inscription within the header above the navigation */
+        .tagline {
+            font-style: italic;
+            font-size: 1.4rem;
+            color: var(--color-primary-light);
+            margin-top: 25px;
+        }
+        
+
+	/* main body edits for visual */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--color-dark);
+            background-color: var(--color-light);
+            line-height: 1.6;
+	    
+        }
+	
+	/* Main body between navigation and first header card spacing and more */
+	/* OUR MISSION STATEMENT */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            min-height: 60vh;
+        }
+        
+	/* first section overall design of the webpage below the navigation */
+	/* OUR MISSION STATEMENT */
+        .hero-section {
+            background: linear-gradient(135deg, var(--color-primary-light) 0%, #f5f0ff 100%);
+            padding: 60px 40px;
+            border-radius: 12px;
+            margin-bottom: 50px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+	/* first section header design of the webpage below the navigation */
+	/* OUR MISSION STATEMENT */	
+        .hero-section h2 {
+            font-size: 2.7rem;
+            color: var(--color-primary-dark);
+            margin-bottom: 20px;
+            font-weight: 647;
+        }
+
+	/* first paragraph section design of the webpage below the navigation */
+	/* OUR MISSION STATEMENT */
+        .hero-section p {
+            font-size: 1.17rem;
+            color: var(--color-gray);
+            max-width: 777px;
+            margin: 0 auto 20px;
+            line-height: 1.8;
+        }
+        
+	/* first inscription below the paragraph design of the webpage below the navigation */
+	/* OUR MISSION STATEMENT */
+        .bible-verse {
+            font-style: bold;
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+        
+	/* Grid Content or Content strips like table of content cards or boxes */
+	/* EDUCATE, MOTIVATE, ELEVATE */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+	/* Overall design of these boxes or cards */
+	/* EDUCATE, MOTIVATE, ELEVATE */
+        .card {
+            background-color: var(--color-gray-light);
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid var(--color-primary);
+        }
+        
+	/* animation design of these boxes or cards */
+	/* EDUCATE, MOTIVATE, ELEVATE */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+	/* each of these content boxes's headers */
+	/* EDUCATE, MOTIVATE, ELEVATE */
+        .card h3 {
+            color: var(--color-primary-dark);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+	/* each of these content boxes's paragraphs */
+	/* EDUCATE, MOTIVATE, ELEVATE */
+        .card p {
+            color: var(--color-gray);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+	/* each of these content boxes's list below their paragraphs */
+	/* EDUCATE, MOTIVATE, ELEVATE */
+        .card ul {
+            margin-left: 20px;
+            color: var(--color-gray);
+        }
+        
+	/* vertical spacing for each of these content boxes's list below their paragraphs */
+	/* EDUCATE, MOTIVATE, ELEVATE */
+        .card li {
+            margin-bottom: 8px;
+        }
+        
+	
+
+
+	/* Section Below Gallery */
+	.gallery-footer-section {
+    		width: 100%;
+    		background: var(--color-primary-light);
+    		padding: 60px 20px;
+    		text-align: center;
+    		margin-top: 0;
+	}
+
+	.gallery-footer-container {
+    		max-width: 1170px;
+    		margin: 0 auto;
+    		background: var(--color-light);
+    		padding: 50px 40px;
+    		border-radius: 10px;
+    		box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+	}
+
+	.gallery-footer-container h3 {
+    		font-size: 24px;
+    		color: var(--color-dark);
+    		margin-bottom: 15px;
+	}
+
+	.gallery-footer-container p {
+    		font-size: 14px;
+    		color: var(--color-gray);
+    		margin-bottom: 30px;
+    		line-height: 1.6;
+	}
+
+	.gallery-footer-button {
+    		display: inline-block;
+    		padding: 15px 40px;
+    		background: var(--color-primary);
+    		color: var(--color-light);
+    		text-decoration: none;
+    		border-radius: 8px;
+    		font-size: 16px;
+    		font-weight: 600;
+    		transition: all 0.3s ease;
+    		border: none;
+    		cursor: pointer;
+	}
+
+	.gallery-footer-button:hover {
+    		background: var(--color-primary-dark);
+    		box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    		transform: translateY(-2px);
+	}
+	
+	.gallery-footer-icon {
+    		font-size: 48px;
+    		margin-bottom: 20px;
+	}
+        
+
+
+
+
+
+
+	/* Footer below everything */
+        footer {
+            background-color: var(--color-dark);
+            color: var(--color-light);
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        
+	/* First paragraph of the footer section */
+        footer p {
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+	/* Colors for as such at rest or non-engaged */
+        footer a {
+            color: var(--color-meteorite);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+	/* animation for the footer section */
+        footer a:hover {
+            color: var(--color-primary-light);
+        }
+        
+	/* vertical spacing between footer information and button */
+        .social-links {
+            margin-top: 20px;
+        }
+        
+	/* Colors for as such at rest or non-engaged */
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px;
+            background-color: var(--color-primary);
+            border-radius: 5px;
+            transition: background-color 0.3 ease, transform 0.3s ease;
+        }
+
+	/* animation for the social media links section on hover */
+	.social-links a img {
+		width: 24px;
+		height: 24px;
+		display: block;
+		filter: brightness(1);
+		transition: filter 0.3 ease;
+	}
+
+        /* animation for the media links section */
+        .social-links a:hover {
+            background-color: var(--color-meteorite);
+	    transform: scale(1.1);
+        }
+
+	.social-links a: hover img {
+		filter: brightness(1.2);
+	}
+        
+	/* Mobile Device Specifics */
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header p {
+                font-size: 1.1rem;
+            }
+            
+            .hero-section {
+                padding: 40px 20px;
+            }
+            
+            .hero-section h2 {
+                font-size: 1.7rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav a {
+                text-align: center;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+	
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="AES.html"> HOME </a></li>
+            <li><a href="pages/about.html"> ABOUT </a></li>
+	    <li><a href="pages/toysfortots.html"> TOYS FOR TOTS </a></li>
+	    <li><a href="pages/programs.html"> PROGRAMS </a></li>
+	    <li><a href="pages/diplomainabox.html"> DIPLOMA IN A BOX </a></li>
+            <li><a href="pages/gallery.html"> GALLERY </a></li>
+            <li><a href="pages/news.html"> NEWS </a></li>
+            <li><a href="pages/getinvolved.html"> GET INVOLVED </a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Header Section -->
+    <header>
+        <h1>AES LITERACY INSTITUTE</h1>
+        <p> Educate Motivate Elevate </p>
+        <div class="tagline">"Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God." - Philippians 4:6 KJV</div>
+    </header>
+
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+	    <h2> OUR MISSION STATEMENT </h2>
+            <p>"Our mission is to motivate underpriviledged adult learners to obtain the education and career training necessary to be self-sufficient. By reducing barriers and increasing access to career opportunities we will help restore diginity and improve quality of life," AES Institute. </p>
+            <p class="bible-verse"> "A wise man will hear, and will increase learning; and a man of understanding shall attain unto wise counsels:" 
+	    <br>
+	    <p> Proverbs 1:5 </p>
+        </section>
+
+        <!-- Content Grid -->
+        <section class="content-grid">
+            <div class="card">
+                <h3> EDUCATE </h3>
+                <p> We believe that being successful beings with a strong educational foundation. Adults that often lack a high school diploma or its equivalency are 10x more likely to suffer from poverty and chromic unemployment. AES aims to ensure every individual has the educational foundation needed to excel in life.</p>
+                <ul>
+		    <li> Tools Such as: </li>
+		    	<ul>
+                    		<li>Faith-centered approach</li>
+                    		<li>Creative excellence</li>
+                    		<li>Community support</li>
+		    	</ul>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>MOTIVATE</h3>
+                <p>Motivation is a powerful tool. Everything begins from within, what a person believes rather than he or she is. AES aims to motivate individuals who feel that all hope is gone. We work to develop positive thinking mindsets for the purpose of wiping out self-doubt and negativity so that individuals can achieve their dreams! </p>
+                <ul>
+		    <li> Tools Such as: </li>
+		    	<ul>
+                    		<li>Faith-centered approach</li>
+                    		<li>Creative excellence</li>
+                    		<li>Community support</li>
+		    	</ul>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>ELEVATE</h3>
+                <p>By combining motivation, education, career training, and practical skills, we can restore hope and diginity within an individual. By connecting adult learners with the many educational and career reosurces avaliable, individuals will be able to further their education, get a job, and or enter the military.</p>
+                <ul>
+		    <li> Tools Such as: </li>
+		    	<ul>
+                    		<li>Faith-centered approach</li>
+                    		<li>Creative excellence</li>
+                    		<li>Community support</li>
+		    	</ul>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Google Forms Section Below Gallery -->
+	<section class="gallery-footer-section">
+    	<div class="gallery-footer-container">
+        <div class="gallery-footer-icon">🗓️</div>
+        	<h3> ESB Certification Program Application </h3>
+        	<p> Cohort-based certification program focused on entrepreneurship, workforce readiness, and practical business skills.</p>
+        	<a href="https://www.cognitoforms.com/AESALIInstitute/ESB" target="_blank" rel="noopener noreferrer" class="gallery-footer-button"> Register </a>
+    	</div>
+	</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AES Literacy Institute. All rights reserved.</p>
+        <p>Inspired to Educate Motivate & Elevate </p>
+
+	<div class="social-links">
+  		<a href="https://www.facebook.com/AESALIInstitute/" target="_blank">
+    			<img src="images/footer_images/facebook-brands-solid-full.svg" alt="Facebook">
+  		</a>
+  		<a href="https://www.instagram.com/aesaliinstitute" target="_blank">
+    			<img src="images/footer_images/instagram-brands-solid-full.svg" alt="Instagram">
+  		</a>
+  		<a href="https://www.linkedin.com/in/aesaliscooper/" target="_blank">
+    			<img src="images/footer_images/linkedin-brands-solid-full.svg" alt="LinkedIn">
+  		</a>
+  		<a href="https://www.youtube.com/@aesaliinstitute4037" target="_blank">
+    			<img src="images/footer_images/youtube-brands-solid-full.svg" alt="Youtube">
+  		</a>
+	</div>
+
+        <p style="margin-top: 20px; font-size: 0.9rem;">
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
