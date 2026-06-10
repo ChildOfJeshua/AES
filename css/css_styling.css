@@ -132,7 +132,7 @@ main {
 
 .hero-section p {
     font-size: 1.17rem;
-    color: var(--color-light);
+    color: var(--color-dark);
     max-width: 777px;
     margin: 0 auto 20px;
     line-height: 1.8;
@@ -140,7 +140,7 @@ main {
  
 .bible-verse {
     font-style: bold;
-    color: var(--color-primary);
+    color: var(--color-dark);
     font-weight: 600;
     margin-top: 20px;
     font-size: 1.1rem;
