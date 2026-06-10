@@ -4,16 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home - AES Literacy Institute </title>
+    <title> News - AES Literacy Institute </title>
     <meta name="description" content="Welcome to AES Literacy Institute, a non-profit organization dedicated to help adult learners of all kind, especially the underprivileged, to obtain the education and career training necessary to be self-sufficient in themselves mentally, academically and spiritually.">
     <link rel="icon" href="../images/AES-Logo-1.svg" type="image/svg+xml">
-
-   
+    <link rel="stylesheet" href="../css/css_stylingsix.css">
 </head>
 <body> 
 
-<!-- Navigation -->
+
+    <!-- Navigation -->
     <nav>
+  <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
         <ul>
             <li><a href="../index.html"> HOME </a></li>
             <li><a href="about.html"> ABOUT </a></li>
@@ -191,7 +196,15 @@
     </footer>
 
 </body>
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const navList = document.querySelector('nav ul');
+
+  btn.addEventListener('click', () => {
+    // Toggle the 'active' class on BOTH the button and the menu
+    btn.classList.toggle('active');
+    navList.classList.toggle('active');
+  });
+</script>
 	
-
-
 </html>
