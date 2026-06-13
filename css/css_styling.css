@@ -197,7 +197,7 @@ main {
 .gallery-footer-container {
     max-width: 1170px;
     margin: 0 auto;
-    background: #121212;
+    background-color: var(--color-gray-light);    
     padding: 50px 40px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -242,7 +242,7 @@ main {
 }
 
 footer {
-    background-color: var(--color-dark);
+    background-color: var(--color-gray-light);    
     color: var(--color-light);
     padding: 40px 20px;
     text-align: center;
@@ -250,13 +250,11 @@ footer {
 }
 
 footer p {
-    background: #121212;
     margin-bottom: 10px;
     opacity: 0.9;
 }
 
 footer a {
-    color: var(--color-meteorite);
     text-decoration: none;
     transition: color 0.3s ease;
 }
