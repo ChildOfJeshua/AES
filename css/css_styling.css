@@ -254,7 +254,7 @@ footer p {
 }
 
 footer a {
-    color: var(--color-meteorite);
+    color: var(--color-dark);
     text-decoration: none;
     transition: color 0.3s ease;
 }
