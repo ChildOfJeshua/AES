@@ -99,7 +99,7 @@ header p {
 
 
 body {
-    font-family: "Garamond", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Console", monospace;
     color: var(--color-dark);
     background: var(--color-light);
     line-height: 1.6;
@@ -107,7 +107,7 @@ body {
 
 
 main {
-    font-family: "Garamond", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Console", monospace;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
