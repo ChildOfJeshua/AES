@@ -243,7 +243,7 @@ main {
 
 footer {
     background-color: var(--color-gray-light);    
-    color: var(--color-light);
+    color: var(--color-dark);
     padding: 40px 20px;
     text-align: center;
     margin-top: 5px;
